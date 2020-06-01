@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+
+body {
+    background-color: #f5f5f5;
+}
+
+.slider h3 {
+    margin-top: 10%;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-shadow: 0px 0px 10px#000;
+}
+
+.slider h5.flow-text {
+    color: white;
+    text-shadow: 1px 1px 10px#000;
+}
+
+.kontaniner {
+    padding: 0px 20px;
+}
+
+nav {
+    background: rgba(0, 0, 0, 0) !important;
+    position: fixed;
+    padding: 10px 50px;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    box-sizing: border-box;
+    transition: .5s;
+}
+
+
+nav a.flow-text {
+    font-family: 'Yellowtail', cursive;
+}
+
+nav a.flow-text {
+    color: #e64c3c;
+    text-shadow: 0px 10px 20px#000;
+    /* visibility: hidden; */
+}
+
+nav ul li a {
+    padding: 5px 20px;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    color: #e64c3c;
+    background: rgba(0, 0, 0, 0);
+}
+
+
+
+/* navbar berubah */
+nav.color {
+    background: #2c3e50 !important;
+    height: 80px;
+    padding: 10px 50px;
+    font-size: 10px;
+}
+
+nav.color a.flow-text {
+    color: #e64c3c;
+    visibility: visible;
+}
+
+
+nav.color ul li a {
+    padding: 3px 20px;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+nav.color ul li a.active,
+nav.color ul li a:hover {
+    color: #fff;
+    background: #e64c3c;
+}
+
+
+.slider img {
+    box-shadow: inset 0px 0px 1000px #000 !important;
+    /* -webkit-filter: grayscale(100%);
+    filter: grayscale(100%); */
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+
+}
+
+.slider {
+    margin-top: -65px;
+    position: relative;
+}
+
+.portfolio,
+.skill h3 {
+    font-family: 'Roboto', sans-serif;
+    color: #e64c3c;
+}
+
+.portfolio,
+.contact,
+.about,
+.skill {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.contact h3 {
+    font-family: 'Roboto', sans-serif;
+    color: #e64c3c;
+}
+
+.about h3 {
+    font-family: 'Roboto', sans-serif;
+    color: #e64c3c;
+}
+
+.satu,
+.kedua,
+.tiga {
+    margin-top: 80px;
+}
+
+
+/* untuk abouy */
+.timeline {
+    position: relative;
+    /* margin: 50px auto; */
+    /* padding: 40px 0; */
+    /* width: 1000px; */
+    box-sizing: border-box;
+}
+
+.timeline:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background: #c5c5c5;
+
+}
+
+.timeline ul {
+    margin: 0;
+    padding: 0;
+}
+
+.timeline ul li {
+    list-style: none;
+    line-height: normal;
+    position: relative;
+    width: 50%;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+
+.timeline ul li:nth-child(odd) {
+    float: left;
+    text-align: right;
+    clear: both;
+}
+
+.timeline ul li:nth-child(even) {
+    float: right;
+    text-align: left;
+    clear: both;
+}
+
+.content {
+    padding-bottom: 20px;
+}
+
+/* untuk bulat bulat */
+.timeline ul li:nth-child(odd):before {
+
+    content: '';
+    position: absolute;
+    top: 24px;
+    right: -6px;
+    width: 10px;
+    height: 10px;
+    background: rgba(233, 33, 99, 1);
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.2);
+}
+
+.timeline ul li:nth-child(even):before {
+
+    content: '';
+    position: absolute;
+    top: 24px;
+    left: -4px;
+    width: 10px;
+    height: 10px;
+    background: rgba(233, 33, 99, 1);
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.2);
+}
+
+/* untuk judul pekerjaan */
+.timeline ul li h5 {
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    color: #e64c3c;
+}
+
+
+/* untuk detail pekerjaan */
+.timeline ul li p {
+    margin: 10px 0 0;
+    padding: 0;
+}
+
+/* untuk tahun */
+.timeline ul li .time h6 {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+.timeline ul li:nth-child(odd) .time {
+    position: absolute;
+    top: 12px;
+    right: -200px;
+    margin: 0;
+    padding: 8px 16px;
+    background: #e64c3c;
+    color: #fff;
+    border-radius: 18px;
+    box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.2);
+}
+
+.timeline ul li:nth-child(even) .time {
+    position: absolute;
+    top: 12px;
+    left: -190px;
+    margin: 0;
+    padding: 8px 16px;
+    background: #e64c3c;
+    color: #fff;
+    border-radius: 18px;
+    box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.2);
+}
+
+@media(max-width: 1000px) {
+    .timeline {
+        width: 100%;
+
+    }
+
+    hr {
+        visibility: visible;
+    }
+}
+
+@media(max-width: 767px) {
+    .timeline {
+        top: 50px;
+        width: 100%;
+
+    }
+
+    hr {
+        visibility: hidden;
+    }
+
+    .timeline:before {
+        top: -50px;
+        left: 0;
+    }
+
+    .timeline ul li:nth-child(odd),
+    .timeline ul li:nth-child(even) {
+        /* atur ini utuk menggeser bulat tahun */
+        width: 100%;
+        text-align: left;
+        padding-left: 50px;
+        padding-bottom: 50px;
+    }
+
+    .timeline ul li:nth-child(odd):before,
+    .timeline ul li:nth-child(even):before {
+        /* atur ini utuk menggeser balok tahun */
+        top: -30px;
+        left: -4px;
+    }
+
+    .timeline ul li:nth-child(odd) .time,
+    .timeline ul li:nth-child(even) .time {
+        /* atur ini utuk menggeser balok tahun */
+        top: -40px;
+        left: 50px;
+        right: inherit;
+    }
+}
+
+/* contact */
+.social-media {
+    display: flex;
+    justify-content: center;
+}
+
+/* untuk boxnya */
+.social-media a {
+    display: flex;
+    background: #fff;
+    height: 100px;
+    width: 100px;
+    margin: 0 15px;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+        -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(0, 0, 0, 0);
+    transition: transform 0.5s;
+}
+
+.social-media a i {
+    font-size: 35px;
+    color: #777;
+    transition: transform 0.5s;
+}
+
+.social-media a:hover {
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+        inset 4px 4px 6px -1px rgba(255, 255, 255, 0.7),
+        -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+        0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+        0px 12px 10px -10px rgba(0, 0, 0, 0.0.5);
+
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+    transform: translateY(2px);
+}
+
+/* menegcilkan logo ketika mouse masuk */
+.social-media a:hover i {
+    transform: scale(1.5);
+}
+
+.social-media a:hover .fa-facebook {
+    color: #3b5998;
+}
+
+.social-media a:hover .fa-twitter {
+    color: #00acee;
+}
+
+.social-media a:hover .fa-instagram {
+    color: #f14843;
+}
+
+.jarak {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+/* untuk email */
+.surat h1 {
+    color: white;
+}
+
+.surat {
+    padding-top: 30px;
+}
+
+.surat .fa {
+    color: #777;
+}
+
+.surat .ikon .fa {
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.surat .ikon h3,
+.surat .ikon h4 {
+    position: relative;
+    overflow: hidden;
+    font-weight: 400;
+    margin: 0;
+    padding: 2px 5px;
+    font-size: 24px;
+    transition-delay: 0.3333s;
+    color: transparent;
+}
+
+.surat .fa:hover~h3,
+.surat .fa:hover~h4 {
+    color: #2c3e50;
+}
+
+.surat .ikon h4 {
+    font-weight: 600;
+    margin: 5px 0;
+    font-style: 30px;
+}
+
+.surat .ikon h3:before,
+.surat .ikon h4:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background: #2c3e50;
+    transition: 1s;
+}
+
+.surat .ikon h4:before {
+    left: initial;
+    right: 100%;
+    background: #e64c3c;
+}
+
+.surat .fa:hover~h3:before {
+    left: -100%;
+}
+
+.surat .fa:hover~h4:before {
+    left: initial;
+    right: -100%;
+}
+
+footer {
+    padding: 10px 0;
+}
