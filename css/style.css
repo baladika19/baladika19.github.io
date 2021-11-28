@@ -236,7 +236,7 @@ nav.color ul li a:hover {
 .timeline ul li:nth-child(odd) .time {
     position: absolute;
     top: 12px;
-    right: -200px;
+    right: -280px;
     margin: 0;
     padding: 8px 16px;
     background: #e64c3c;
@@ -248,7 +248,7 @@ nav.color ul li a:hover {
 .timeline ul li:nth-child(even) .time {
     position: absolute;
     top: 12px;
-    left: -190px;
+    left: -250px;
     margin: 0;
     padding: 8px 16px;
     background: #e64c3c;
